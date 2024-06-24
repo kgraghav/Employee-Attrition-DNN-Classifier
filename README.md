@@ -2,41 +2,41 @@
 Employee Retention Prediction using DNN
 <br> A Deep Neural Network Classifier is trained on employee records to predict if an employee is at risk of leaving
 <p>
-  Employee Attrition Prediction Report
+  <br>Employee Attrition Prediction Report
 
-1. Purpose
+<br><br>1. Purpose
 This report analyzes employee attrition using a Deep Neural Network (DNN) classification model. The model aims to predict employee attrition risk based on various employee and company-related features.
 
-2. Methodology
-2.1 Data Preparation
-Data Loading and Merging: Employee data from separate 'train' and 'test' CSV files were combined for comprehensive analysis.
-Data Cleaning: Irrelevant features (Employee ID) were removed. Missing data points were handled, ensuring a clean dataset for model training.
-Feature Engineering:
-Categorical Encoding: Categorical features (e.g., Gender, Job Role) were converted to numerical values using encoding techniques to facilitate model processing.
-Data Scaling: Numerical features were standardized using StandardScaler to have zero mean and unit variance, preventing features with large magnitudes from disproportionately influencing the model.
+<br><br>2. Methodology
+<br>2.1 Data Preparation
+<br>Data Loading and Merging: Employee data from separate 'train' and 'test' CSV files were combined for comprehensive analysis.
+<br>Data Cleaning: Irrelevant features (Employee ID) were removed. Missing data points were handled, ensuring a clean dataset for model training.
+<br>Feature Engineering:
+<br>Categorical Encoding: Categorical features (e.g., Gender, Job Role) were converted to numerical values using encoding techniques to facilitate model processing.
+<br>Data Scaling: Numerical features were standardized using StandardScaler to have zero mean and unit variance, preventing features with large magnitudes from disproportionately influencing the model.
 Feature Correlation Analysis: Pearson correlation was employed to visualize the relationship between each feature and the target variable (Attrition).
-2.2 Model Training and Evaluation
-Data Splitting: The dataset was randomly split into training (60%), evaluation (20%), and test (20%) sets to train, tune hyperparameters, and assess the model's generalization performance.
-Model Architecture: A DNN with multiple dense layers and ReLU activation functions was chosen for its ability to capture complex non-linear relationships within the data.
-Model Compilation: The model was compiled using the 'adam' optimizer and 'sparse_categorical_crossentropy' loss function, suitable for multi-class classification problems.
-Callbacks:
+<br>2.2 Model Training and Evaluation
+<br>Data Splitting: The dataset was randomly split into training (60%), evaluation (20%), and test (20%) sets to train, tune hyperparameters, and assess the model's generalization performance.
+<br>Model Architecture: A DNN with multiple dense layers and ReLU activation functions was chosen for its ability to capture complex non-linear relationships within the data.
+<br>Model Compilation: The model was compiled using the 'adam' optimizer and 'sparse_categorical_crossentropy' loss function, suitable for multi-class classification problems.
+<br>Callbacks:
 Learning Rate Scheduler: A custom learning rate scheduler was implemented to dynamically adjust the learning rate during training, potentially improving convergence speed and performance.
 Early Stopping: This callback halted training when the model's performance on the validation set stopped improving, preventing overfitting.
 Model Training: The model was trained on the training data, with progress monitored for loss reduction.
 Performance Metrics: The model was evaluated using accuracy, precision, recall, and F1-score on both the training and evaluation datasets.
 Confusion Matrix: A confusion matrix was generated to visualize the model's predictions, highlighting true positives, true negatives, false positives, and false negatives.
-2.3 Prediction
+<br>2.3 Prediction
 New Data Input: A sample input DataFrame reflecting a potential employee's information was created.
 Prediction: The trained model was used to predict the attrition risk for the new input data.
-3. Observations
+<br><br>3. Observations
 Feature Importance: Marital status, job level, and remote work appear to have the most significant influence on attrition.
 Model Performance: The DNN model achieved a reasonable performance on the training and evaluation datasets, with metrics (precision, recall, F1-score, accuracy) ranging from 0.75 to 0.8.
 False Positives: Approximately 14% of employees predicted to stay actually left, representing a significant area of concern.
-4. Findings
+<br><br>4. Findings
 The developed DNN model can predict employee attrition risk with moderate accuracy.
 The model highlights key features that strongly correlate with employee attrition, providing insights for HR strategies and interventions.
 Addressing the false-positive rate is crucial to minimize unexpected employee departures and associated costs.
-5. Improvements
+<br><br>5. Improvements
 Model Optimization: Experiment with hyperparameter tuning (e.g., number of layers, neurons per layer, learning rate, activation functions) to enhance model performance.
 Feature Engineering: Explore additional features or engineered features that might better capture attrition drivers (e.g., interaction terms, time-based variables).
 Continuous Monitoring and Refinement: Continuously evaluate the model's performance on new data and retrain it periodically to adapt to evolving trends and maintain accuracy.
