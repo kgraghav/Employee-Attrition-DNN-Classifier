@@ -20,26 +20,26 @@ Feature Correlation Analysis: Pearson correlation was employed to visualize the 
 <br>Model Architecture: A DNN with multiple dense layers and ReLU activation functions was chosen for its ability to capture complex non-linear relationships within the data.
 <br>Model Compilation: The model was compiled using the 'adam' optimizer and 'sparse_categorical_crossentropy' loss function, suitable for multi-class classification problems.
 <br>Callbacks:
-Learning Rate Scheduler: A custom learning rate scheduler was implemented to dynamically adjust the learning rate during training, potentially improving convergence speed and performance.
-Early Stopping: This callback halted training when the model's performance on the validation set stopped improving, preventing overfitting.
-Model Training: The model was trained on the training data, with progress monitored for loss reduction.
-Performance Metrics: The model was evaluated using accuracy, precision, recall, and F1-score on both the training and evaluation datasets.
-Confusion Matrix: A confusion matrix was generated to visualize the model's predictions, highlighting true positives, true negatives, false positives, and false negatives.
+<br>Learning Rate Scheduler: A custom learning rate scheduler was implemented to dynamically adjust the learning rate during training, potentially improving convergence speed and performance.
+<br>Early Stopping: This callback halted training when the model's performance on the validation set stopped improving, preventing overfitting.
+<br>Model Training: The model was trained on the training data, with progress monitored for loss reduction.
+<br>Performance Metrics: The model was evaluated using accuracy, precision, recall, and F1-score on both the training and evaluation datasets.
+<br>Confusion Matrix: A confusion matrix was generated to visualize the model's predictions, highlighting true positives, true negatives, false positives, and false negatives.
 <br>2.3 Prediction
-New Data Input: A sample input DataFrame reflecting a potential employee's information was created.
-Prediction: The trained model was used to predict the attrition risk for the new input data.
+<br>New Data Input: A sample input DataFrame reflecting a potential employee's information was created.
+<br>Prediction: The trained model was used to predict the attrition risk for the new input data.
 <br><br>3. Observations
-Feature Importance: Marital status, job level, and remote work appear to have the most significant influence on attrition.
-Model Performance: The DNN model achieved a reasonable performance on the training and evaluation datasets, with metrics (precision, recall, F1-score, accuracy) ranging from 0.75 to 0.8.
-False Positives: Approximately 14% of employees predicted to stay actually left, representing a significant area of concern.
+<br>Feature Importance: Marital status, job level, and remote work appear to have the most significant influence on attrition.
+<br>Model Performance: The DNN model achieved a reasonable performance on the training and evaluation datasets, with metrics (precision, recall, F1-score, accuracy) ranging from 0.75 to 0.8.
+<br>False Positives: Approximately 14% of employees predicted to stay actually left, representing a significant area of concern.
 <br><br>4. Findings
-The developed DNN model can predict employee attrition risk with moderate accuracy.
-The model highlights key features that strongly correlate with employee attrition, providing insights for HR strategies and interventions.
-Addressing the false-positive rate is crucial to minimize unexpected employee departures and associated costs.
+<br>The developed DNN model can predict employee attrition risk with moderate accuracy.
+<br>The model highlights key features that strongly correlate with employee attrition, providing insights for HR strategies and interventions.
+<br>Addressing the false-positive rate is crucial to minimize unexpected employee departures and associated costs.
 <br><br>5. Improvements
-Model Optimization: Experiment with hyperparameter tuning (e.g., number of layers, neurons per layer, learning rate, activation functions) to enhance model performance.
-Feature Engineering: Explore additional features or engineered features that might better capture attrition drivers (e.g., interaction terms, time-based variables).
-Continuous Monitoring and Refinement: Continuously evaluate the model's performance on new data and retrain it periodically to adapt to evolving trends and maintain accuracy.
-By implementing these improvements, the model's predictive power can be further enhanced, providing more accurate and actionable insights for reducing employee attrition and improving overall workforce management.
+<br>Model Optimization: Experiment with hyperparameter tuning (e.g., number of layers, neurons per layer, learning rate, activation functions) to enhance model performance.
+F<br>eature Engineering: Explore additional features or engineered features that might better capture attrition drivers (e.g., interaction terms, time-based variables).
+<br>Continuous Monitoring and Refinement: Continuously evaluate the model's performance on new data and retrain it periodically to adapt to evolving trends and maintain accuracy.
+<br>By implementing these improvements, the model's predictive power can be further enhanced, providing more accurate and actionable insights for reducing employee attrition and improving overall workforce management.
 </p>
 <br>Link to notebook: https://www.kaggle.com/code/kgraghav/predict-attrition-dnn
