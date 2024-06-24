@@ -2,7 +2,7 @@
 Employee Retention Prediction using DNN
 <br> A Deep Neural Network Classifier is trained on employee records to predict if an employee is at risk of leaving
 <p>
-  <br>Employee Attrition Prediction Report
+  <br>Employee Attrition Prediction Summary Report
 
 <br><br>1. Purpose
 This report analyzes employee attrition using a Deep Neural Network (DNN) classification model. The model aims to predict employee attrition risk based on various employee and company-related features.
