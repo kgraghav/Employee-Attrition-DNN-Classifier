@@ -31,7 +31,7 @@ This report analyzes employee attrition using a Deep Neural Network (DNN) classi
 <br><br>3. Observations
 <br>Feature Importance: Marital status, job level, and remote work appear to have the most significant influence on attrition.
 <br>Model Performance: The DNN model achieved a reasonable performance on the training and evaluation datasets, with metrics (precision, recall, F1-score, accuracy) ranging from 0.75 to 0.8.
-<br>False Positives: Approximately 14% of employees predicted to stay actually left, representing a significant area of concern.
+<br>False Positives: Approximately 14% of employees predicted to stay actually left, representing an avenue for model improvement.
 <br><br>4. Findings
 <br>The developed DNN model can predict employee attrition risk with moderate accuracy.
 <br>The model highlights key features that strongly correlate with employee attrition, providing insights for HR strategies and interventions.
