@@ -14,7 +14,7 @@ This report analyzes employee attrition using a Deep Neural Network (DNN) classi
 <br>Feature Engineering:
 <br>Categorical Encoding: Categorical features (e.g., Gender, Job Role) were converted to numerical values using encoding techniques to facilitate model processing.
 <br>Data Scaling: Numerical features were standardized using StandardScaler to have zero mean and unit variance, preventing features with large magnitudes from disproportionately influencing the model.
-Feature Correlation Analysis: Pearson correlation was employed to visualize the relationship between each feature and the target variable (Attrition).
+<br>Feature Correlation Analysis: Pearson correlation was employed to visualize the relationship between each feature and the target variable (Attrition).
 <br>2.2 Model Training and Evaluation
 <br>Data Splitting: The dataset was randomly split into training (60%), evaluation (20%), and test (20%) sets to train, tune hyperparameters, and assess the model's generalization performance.
 <br>Model Architecture: A DNN with multiple dense layers and ReLU activation functions was chosen for its ability to capture complex non-linear relationships within the data.
